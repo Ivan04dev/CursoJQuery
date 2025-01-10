@@ -1,0 +1,15 @@
+// Oculta un elemento con hide
+$("#ocultar").click(function(){
+    $('#usuario').hide();
+})
+
+// Muestra un elemento con show
+$('#mostrar').click(function(){
+    $('#usuario').show();
+})
+   
+// Ocultar/mostrar con toggle
+$('#toggle').click(function(){
+    $('#usuario').toggle();
+})
+
