@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a jQuery</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+
+    <ul>
+        <li>Uno</li>
+        <li>Dos</li>
+        <li>Tres</li>
+    </ul>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){ // $(function(){
+            // Cambia el color a verde en las etiquetas ul 
+            $('ul').addClass('text-success');
+        
+            // Cambia el color al primer hijo 
+            $('li:first-child').addClass('text-warning');
+        
+            // Cambia el color al último hijo 
+            $('li:last-child').addClass('text-danger');
+        })
+    </script>
+</body>
+</html>
